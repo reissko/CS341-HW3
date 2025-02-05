@@ -1,0 +1,141 @@
+/* Author: Reiss Oliveros */
+
+body {
+    background-color: black;
+}
+
+h1, h2 {
+    font-family: sans-serif, Arial;
+}
+
+h3 {
+    font-family:Arial, Helvetica, sans-serif
+}
+
+/* Center the cheesecake order form and give it a cheesecake-y gradient */
+.center-div {
+    width: 700px;
+    height: 800px;
+    background: linear-gradient(#fdfbd4, #a77a4b);
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8%;
+    position: absolute;
+}
+
+/* Make the images of cheesecake appear side by side */
+.quantity-topping {
+    display: inline-block;
+    margin: auto;
+}
+
+#quantity {
+    padding-left: 10%;
+    background-color: #fdfbd4;
+    border-radius: 0.7em;
+}
+
+#topping {
+    padding-left: 10%;
+}
+
+/* Give the images dimensions and make them rounded */
+img {
+    width:  200px;
+    height: 275px;
+    object-fit: cover;
+    border-radius: 2em;
+}
+
+/* Make the textarea fit the screen nicely */
+textarea {
+    width: 70%;
+    height: 7%;
+    margin-top: -1em;
+}
+ */
+ul {
+    list-style-position: outside;
+    margin: 0;
+    padding-left: 40px;
+    text-align: left;
+}
+
+li {
+    margin: 5px 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+
+/* Everything below was taken or based off of code from https://www.w3schools.com/howto/howto_css_dropdown.asp */
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #fdfbd4;
+    color: black;
+    width: 80px;
+    height: 30px;
+    margin-top: -1em;
+    border-radius: 0.7em;
+}
+
+.dropbtn:active {
+    background-color: #a77a4b;
+    transform: translateY(4px);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: -1em;
+}
+
+.month-option {
+    background-color: #fdfbd4;
+    border-radius: 0.7em;
+    width: 100%;
+    height: 100%;
+}
+
+.month-option:active {
+    background-color: #a77a4b;
+    transform: translateY(4px);
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fdfbd4;
+    min-width: 100px;
+    max-height: 150px;
+    overflow: scroll;
+}
+
+/* Links inside the dropdown */
+.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content button:hover {
+    background-color: #fdfbd4;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #fdfbd4;
+}

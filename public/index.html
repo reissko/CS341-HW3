@@ -1,0 +1,82 @@
+<!--Author: Reiss Oliveros-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        <!-- Div for the cheesecake order form -->
+        <div class="center-div">
+            <h1>Cheesecake Order Form</h1>
+            <!-- Div to hold the images -->
+            <div class="images">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/A_New_York_Cake_from_Pascucci_Italian_Caffe_and_Fine_Food.jpg" alt="Picture of cheesecake">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Cheesecake_mit_Beeren.jpg" alt="Picture of cheesecake">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Chocolate_cheese_cake.jpg" alt="Picture of cheesecake">
+            </div>
+            <!-- Div to hold the quantity and topping sections (side by side) -->
+            <div id="quantity-topping-div">
+                <div class="quantity-topping">
+                    <h3>Quantity</h3>
+                    <select id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="quantity-topping" id="topping">
+                    <h3>Topping</h3>
+                    <input type="radio" name="flavor" value="Plain"> <label for="plain">Plain</label>
+                    <input type="radio" name="flavor" value="Cherry"> <label for="cherry">Cherry</label>
+                    <input type="radio" name="flavor" value="Chocolate"> <label for="chocolate">Chocolate</label>
+                </div>
+            </div>
+
+            <!-- Notes text, text area for order specifications and order button -->
+            <h3 id="notes-thank-you">Notes:</h3>
+            <div id="notes-div">
+                <textarea placeholder="Enter any special instructions here."></textarea><br>
+                <button type="button" id="order-button">Order</button>
+            </div>
+
+            <!-- Orders from "last month" text and list of orders-->
+            <div class="dropdown">
+                <h2 class="orders-header"> Total orders from </h2>
+                <div class="dropdown">
+                    <button type="button" class="dropbtn">Jan</button>
+                    <div class="dropdown-content">
+                        <button type="button" value="jan" class="month-option">Jan</button>
+                        <button type="button" value="feb" class="month-option">Feb</button>
+                        <button type="button" value="mar" class="month-option">Mar</button>
+                        <button type="button" value="apr" class="month-option">Apr</button>
+                        <button type="button" value="may" class="month-option">May</button>
+                        <button type="button" value="jun" class="month-option">Jun</button>
+                        <button type="button" value="jul" class="month-option">Jul</button>
+                        <button type="button" value="aug" class="month-option">Aug</button>
+                        <button type="button" value="sep" class="month-option">Sep</button>
+                        <button type="button" value="oct" class="month-option">Oct</button>
+                        <button type="button" value="nov" class="month-option">Nov</button>
+                        <button type="button" value="dec" class="month-option">Dec</button>
+                    </div>
+                </div>
+                <div class="order-list-div">
+                    <ul id="orders-list">
+                        <li id="cherry-orders">11 cherry</li>
+                        <li id="cherry-orders">17 chocolate</li>
+                        <li id="plain-orders">31 plain</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </form>
+    <script src="./javascripts/script.js"></script>
+</body>
+</html>
